@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Mark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container pt-2">
+    <h1 class="text-center pb-2">Bookmarker</h1>
+    <hr>
+
+    <h2 class="text-center py-3"> Bookmark your favorite sites </h2>
+    <div class="my-3">
+        <label for="bookmarkName" class="my-1"> Site Name</label>
+        <input type="text" id="bookmarkName" placeholder="Bookmark Name" class="form-control">
+    </div>
+    <div class="my-3">
+        <label for="bookmarkURL" class="my-1">Site URL</label>
+        <input type="url" id="bookmarkURL" placeholder="Website URL" class="form-control">
+    </div>
+
+    <button id="addBtn" class="btn btn-danger my-3" onclick="addData();">Submit</button>
+    <hr>
+
+    <table class="table my-3 text-center">
+        <thead>
+            <tr>
+                <td>Index</td>
+                <td>Website Name</td>
+                <td>Visit</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+</div>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
